@@ -373,7 +373,6 @@ USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev,
          * STATUS PHASE completed, update ep0_state to idle
          */
         pdev->ep0_state = USBD_EP0_IDLE;
-        (void)USBD_LL_StallEP(pdev, 0U);
       }
 #endif
     }
